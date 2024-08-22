@@ -42,7 +42,7 @@ public class Main {
                 System.out.print("Ingresa la defha de estreno pelicula en formato AAAA-MM-DD: ");
                 String fechaTexto=leerTeclado.nextLine();
                 LocalDate fecha= LocalDate.parse(fechaTexto);
-                System.out.println("la fecha ingresada es"+fecha);
+                System.out.println("la fecha ingresada es: "+fecha);
 
                 int idPelicula=new Random().nextInt(100);
 
@@ -50,6 +50,7 @@ public class Main {
                 pelicula.put("nombre",nombrePelicula);
                 pelicula.put("duracion",duracionPelicula);
                 pelicula.put("clasificacion",clasificacionPelicula);
+                pelicula.put("sinopsis",sinopsisPelicula);
                 pelicula.put("fechaestreno",fecha);
                 pelicula.put("id", idPelicula);
 
@@ -107,7 +108,7 @@ public class Main {
                         System.out.println(productoAuxiliar);
                         //como encontrar el indice del producto auxiliar
                         // si es necesario encontrar el indice
-                        System.out.print("ingresa la nueva sinopsis de la pelicula");
+                        System.out.print("ingresa la nueva sinopsis de la pelicula: ");
                         String nuevoSinopsisPelicula = leerTeclado.nextLine();
 
 
